@@ -1,0 +1,45 @@
+.contenedor-principal {
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.formulario-notas {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.input-nota {
+  display: block;
+  margin-bottom: 10px;
+  width: 300px;
+  padding: 5px;
+}
+
+.btn-guardar {
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.tarjeta-nota {
+  border: 1px solid #000;
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: #fff9c4; 
+}
+
+.titulo-nota {
+  margin: 0 0 10px 0;
+}
+
+.contenido-nota {
+  margin: 0;
+}

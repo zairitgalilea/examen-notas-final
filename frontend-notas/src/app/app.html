@@ -1,0 +1,39 @@
+<div class="contenedor-principal">
+  <h1>Mis Notas Rápidas</h1>
+
+  <div class="formulario-notas">
+    <h3>Crear nueva nota</h3>
+    
+    <input 
+      type="text" 
+      placeholder="Título de la nota" 
+      [(ngModel)]="tituloNuevaNota" 
+      class="input-nota"
+    >
+    
+    <input 
+      type="text" 
+      placeholder="Contenido" 
+      [(ngModel)]="contenidoNuevaNota" 
+      class="input-nota"
+    >
+    
+    <button (click)="guardarNota()" class="btn-guardar">
+      Guardar
+    </button>
+  </div>
+
+  <h2>Lista de Notas</h2>
+
+  <div class="contenedor-tarjetas">
+    @for (nota of servicioDeNotas.notas(); track nota._id) {
+      <div class="tarjeta-nota">
+        <h4 class="titulo-nota">{{ nota.titulo }}</h4>
+        <p class="contenido-nota">{{ nota.contenido }}</p>
+      </div>
+    } @empty {
+      <p>No hay notas guardadas aún.</p>
+    }
+    
+  </div>
+</div>
